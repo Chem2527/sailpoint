@@ -1,5 +1,3 @@
-# sailpoint
-
 
 Gatner: provides rankings for iam solutions
 
@@ -147,6 +145,160 @@ by default we will be seeing hr employees under application accounts of any iden
 
 
 Under User Rights menu we can see the  what platform-level rights that they have for IdentityIQ.
+
+
+
+
+Identity classification:
+
+
+common classification:
+
+employee
+interns
+temp worker
+contractor
+supplier
+patner
+bot - non human
+
+other classification:
+permanent employee
+fixed-term employee
+
+subsidiary employee
+subsidiary contractor
+
+vendor
+
+
+Lab SailPoint IIQ: Identity Classification
+
+post logging into IIQ Interface navigate to identities tab --> identity warehouse --> on the right side we can see what type of identity it is.. like employee, contractor.. Its actually a configuration made in solution. Each identity comes from an authoritative source.
+
+The attributes differ from each identity based on the identity type. ex: job title only present for employees not for contractors.
+
+
+How this info is retrieved from authoritative sources??
+
+
+
+Authoritative sources - 1:
+
+
+we have some famous human resources information systems (HRIS)  like
+
+workday
+oracle
+sap
+talentspace
+
+all the above mentioned are used to manage identities
+
+
+once the identity is created in the authoritative sources the goal is to import it into IAG solutions.
+
+similarly when data is modified in human resources information systems(HRIS) they need to sync..
+
+
+This integration can be done in 2 ways
+
+
+1.Flat file (.csv)
+
+
+HRIS generates the flat file and this IAG solution ingests the file for creation, modification, delete..
+
+2.Direct connector
+
+these are becoming more and more common. these are real connectors i.e., technical connectors b/w HRIS and IAG solutions
+
+
+Authoritative sources - 2:
+
+Data changes in identity authoritative sources can trigger IAM processes like joiner, mover, leaver processes
+In identity authoritative source       In IAG                 Main actions performed
+
+New Identity                           joiner process         create digital identity, generate login/pwsd,               assign access rights, send notification to user and manager
+
+
+Identity removal			Leaver process	      Deactivate digital identity, remove access in applications
+
+Job update				Mover process	     Delete old access rights, assign new access rights
+
+
+
+
+Lab SailPoint IIQ: Authoritative sources - 1:
+
+ Take 2 .csvs  in text format 1 for employees and another for contractors
+
+and at the end of each file add // which will ignore that particular identity.
+
+
+Go to setup menu and click on Tasks
+
+
+click on aggregate employees and right click and click on execute in background & do the same for aggregate contractors.
+
+Note: Aggregate = fetch and load data from connected sources into SailPoint.
+
+
+After doing that go to Task results and we can see whether tasks for both employees and contractors are succeeded or not.
+
+
+Again remove the // from last line and we can  do the same aggregate employees & contractors. This time we can clearly see the difference that under identities created we can see the number as 1 for both employees and contractors as we exactly modified 1 for both.
+
+
+Note:  we wont be able to see the managers of all above users as it needs policy evaluation and identity linking which happens during refresh identity cube.
+Refresh Identity Cube = Rebuild identity, apply rules, link relationships (like manager), calculate roles, policies, and risk scores.
+
+
+navigate to setup --> tasks --> search for refresh identity cube.
+
+
+employee departure process
+
+we need to keep // infront of .csv for employee then save and click on aggregate employees and run in background and we can see the task result where we can observe that account links deleted as 1.
+
+Through above process we have seen how identities have integrated into IAG solutions to manage iam life cycle.
+The files we modifies comes from HRIS in this case.
+
+Note: Need to configure this file path in server.
+
+Lab SailPoint IIQ: Authoritative sources - 2:
+
+
+In this lab we r going to focus on modifying identity information.
+
+
+Modify the location of user from x to y and save and click on setup and tasks and click on aggregate employees and we can observe the location is changed to latest one.
+
+
+Note: In sailpoint we cant modify the data if we wants to change we need to do it from authoritative source i.e from HRIS. Its a good practice to respect this principle. But in few cases we need to modify data due to bugs, delays from HRIS we need to manually do this for temporary purpose. keep in mind that again if we do employee aggregate the changes which we manually modified and changes which are coming from authoritative source are matched then only old data will stay or else authoritative source data will be considered.
+
+ ex:  from authoritative source  we received data where the identity data is paris but identity actual region is London we can manually change to London through below steps.
+
+settings --> global settings --> identity mappings --> region --> edit mode --> modify from read to temporary.
+
+
+
+
+Identity Life cycle:
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
 
 
 
