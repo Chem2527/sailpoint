@@ -363,10 +363,22 @@ Refresh Identity Cube = Rebuild identity, apply rules, link relationships (like 
 - **Entitlement** --> actual permission in system jenkins build pipelines access, k8s deploy pods access, github repo write access,
 - **Source** ---> The system where the permission lives (jenkins,github..)
 
+- **Drawbacks**: maintenance of larger roles if org is big.
+
+
+## ABAC : Attribute based Access Control(fine-grained control):
+
+- This model controls access by evaluating rules against attributes:
+ - user attributes
+ - environmental attributes
+ - resource attributes
+- The rules are configured directly within the  target applications.
+- Retrieval of attributes is achieved at the time of authentication.
+- <img width="3264" height="1821" alt="image" src="https://github.com/user-attachments/assets/2d12bbfa-7554-4455-9464-c39f508a74c7" />
+- <img width="3264" height="1630" alt="image" src="https://github.com/user-attachments/assets/826b7e9d-f1dd-4264-85d6-e6a79677bf6c" />
 - 
 
-- 
-- 
+
 
  
 
