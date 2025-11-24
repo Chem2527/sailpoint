@@ -278,7 +278,9 @@ Refresh Identity Cube = Rebuild identity, apply rules, link relationships (like 
 
 <img width="800" height="480" alt="image" src="https://github.com/user-attachments/assets/5d9594c8-0061-405c-99a8-48d501c5fac8" />
 
-
+- Identity Status
+- <img width="4096" height="2017" alt="image" src="https://github.com/user-attachments/assets/19ece0f0-9bfe-4907-9731-e422d88a553b" />
+- 
 
 
 
