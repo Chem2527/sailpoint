@@ -321,8 +321,16 @@ Refresh Identity Cube = Rebuild identity, apply rules, link relationships (like 
 
 - <img width="3264" height="1601" alt="image" src="https://github.com/user-attachments/assets/2f2e7d74-85d5-4fb6-be5e-7f0296ad2b73" />
 
+- <img width="3264" height="1604" alt="image" src="https://github.com/user-attachments/assets/556e79f2-3163-437b-b828-a2c2a4c1ddaa" />
+## Unique Identifier - 2 :
+
+- <img width="3264" height="1574" alt="image" src="https://github.com/user-attachments/assets/3e8db751-5331-41d1-ae8a-24a876236fd8" />
 
 
+
+## Identity Certification:
+
+- 
  
 
 
