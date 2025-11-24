@@ -4,7 +4,7 @@
 - Pillars of iam
 
 ```
-|identity management            access rights management                    authentication management            privileged access management
+identity management             access rights management                    authentication management            privileged access management
 |                              |                                          |                            |
 |                              |                                          |                            |
 |					                         |	                                         |                            |
