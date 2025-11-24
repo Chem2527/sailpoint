@@ -343,9 +343,25 @@ Refresh Identity Cube = Rebuild identity, apply rules, link relationships (like 
 
 - <img width="3264" height="2448" alt="image" src="https://github.com/user-attachments/assets/a817625b-e8fc-4569-8d17-85f85f4708ae" />
 
-- How to assign the access rights to identities and how this access rights are managed to meet the challenges faced by bussinesses and comply with security requirements.
+- How to assign the access rights to identities and how this access rights are managed to meet the challenges faced by bussinesses and comply with security requirements??
 
 - Access management includes 8 major capabilities to support access management processes.
+
+## Access rights Models -  RBAC : 1:
+- Role: Collection of permissions. all users receive permissions only through the roles to which they are assigned in IG solution.
+
+- Instead of assigning individual permissions to each user, SailPoint groups permissions into roles.
+
+- Identity → Role → Entitlement(permissions/privilige)
+
+### RBAC Implementation:
+- <img width="3264" height="1879" alt="image" src="https://github.com/user-attachments/assets/de54573c-67f3-48e3-975c-0391b5fd416b" />
+
+- **Identity** --> user(sai),
+-  **Role** --> A bundle of related access(devops engg  role ),
+- **Access profile** (CI/CD  access profile..includes Jenkins, GitHub Actions, Kubernetes cluster access) --> A set of entitlements(permissions) grouped together,
+- **Entitlement** --> actual permission in system jenkins build pipelines access, k8s deploy pods access, github repo write access,
+- **Source** ---> The system where the permission lives (jenkins,github..)
 
 - 
 
