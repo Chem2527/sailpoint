@@ -280,12 +280,46 @@ Refresh Identity Cube = Rebuild identity, apply rules, link relationships (like 
 
 - Identity Status
 - <img width="4096" height="2017" alt="image" src="https://github.com/user-attachments/assets/19ece0f0-9bfe-4907-9731-e422d88a553b" />
+
+
+## Identity Life cycle example 1:
+
+- <img width="3944" height="1766" alt="image" src="https://github.com/user-attachments/assets/3f825a7d-9117-4366-a11d-acca1dec8d77" />
+
+- Identity remains disabled till start date or unless until there is a bussiness need.
 - 
 
+## Identity Life cycle example 2:
+
+- <img width="800" height="308" alt="image" src="https://github.com/user-attachments/assets/b091295f-9ce4-45fe-a37a-9b76c2808d3a" />
+
+- we can clearly see the diff b/w example 1 & 2 that there is extra time span b/w contract end date and deactivation date providing additional time to complete remaining tasks.
+
+## Identity Life cycle example 3:
+
+- Contract employee needs to renew on time to time basis
+
+- <img width="3264" height="1273" alt="image" src="https://github.com/user-attachments/assets/29ae2849-edb7-4890-9228-8f4fc841c765" />
 
 
+## Lab SailPoint IIQ - Identity Life cycle
 
+- How the deactivation of user in authoritative source can trigger the deactivation of identity in IAG solution along with their associated authorizations.
 
+- Offboarding a user in a more granualr way
+
+- In previous labs we seen how to delete a identity from sailpoint but in few cases we dont want to delete but instead we want to disable,archive,lock, deactivate..
+
+- Instead of commenting(//) out whole identity this time we will be modifying the attribute which is **inactive from False to True** and do the **aggregation**. Observe under application accounts tab we can see status as active before performing above operation.
+
+- Even after doing above things nothing will change. In sailpoint we need to configure  rules to instruct the solution that if the **inactive attribute is set to True** then the user rights shall be disabled.
+- **Note**: In this demo we r not configuring the rules we r simply going with pre configured rules.
+
+- To ensure that pre configured rules take into effect we need to navigate to tasks -->  search for **refresh with process events** and this task will refresh the identity based on the configured rules
+
+## Unique Identifier- 1 :
+
+- 
 
 
 
