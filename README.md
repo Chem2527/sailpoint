@@ -1,290 +1,279 @@
+# Sail Point
+- Gatner: provides rankings for iam solutions
 
-Gatner: provides rankings for iam solutions
+- Pillars of iam
 
-Pillars of iam
-
-
+```
 |identity management --> access rights management-->  authentication management                                   --> privileged access management
 |                                               |
 |                                               |
-|					        |	
-|	Iam for users(sailpont,)	        |  Iam for applications(ping identity,ota,microsoft)                 cyberark
+|					                                          |	
+|	Iam for users(sailpont,)	                     |  Iam for applications(ping identity,ota,microsoft)                 cyberark
+```
 
 
 
-
-identity and access governance architecture:
-
-
-hr  system is the entry point or source for identity source
+## identity and access governance architecture:
 
 
-employee ---> hr system ---> inserted into iag solution--> identity will be provisioned --->  manager gives authorization ---> automatic roles will be assigned --> provisioning of identity and its access is performed in  centralized directory ( ex: active directory ) and this directory is interfaced with applications either on prem or cloud. Every time a user logs into application interface with this directory to check users authorization.
+- hr  system is the entry point or source for identity source
+
+
+- employee ---> hr system ---> inserted into iag solution--> identity will be provisioned --->  manager gives authorization ---> automatic roles will be assigned --> provisioning of identity and its access is performed in  centralized directory ( ex: active directory ) and this directory is interfaced with applications either on prem or cloud. Every time a user logs into application interface with this directory to check users authorization.
  
+- iam --> provide access
+- iag --> auditing and checking whether it complies with governance or not.
 
 
 
-iam --> provide access
-iag --> auditing and checking whether it complies with governance or not.
+## iag main end users:
+
+- **standard user**: access request in self service, access rights visualization
+- **manager**: access request for their team, access review for their team, access approval for their team, define access needed for their team.
+- **assistant**: access request in place of manager, access approval in place of manager
+- **security**: access review for critical assets, access approval for critical access
+- **application owner**: access review and approval for their application.
+- **auditor**: They need access to variety of information & reporting necessary to control  security and compliance of the company reg regulations.
+
+
+- A **stakeholder** is someone who cares about or is affected by what you’re doing
 
 
 
-iag main end users:
-
-standard user: access request in self service, access rights visualization
-manager: access request for their team, access review for their team, access approval for their team, define access needed for their team.
-assistant: access request in place of manager, access approval in place of manager
-security: access review for critical assets, access approval for critical access
-application owner: access review and approval for their application.
-auditor: They need access to variety of information & reporting necessary to control  security and compliance of the company reg regulations.
+## IAG main stakeholders:
 
 
-A stakeholder is someone who cares about or is affected by what you’re doing
+- **iam team**: iam functional & technical
+
+- **security and compliance team**: ciso,governance team, business continuity team
+
+- **business team**: hr, procurement, app owners,assistants,mamager
+
+- **architects**: iam, security, enterprise architects
+
+## identity management capabilities:
+
+- **identity model**: every identity is represented by attribute and it is mainly a digital copy of physical identity.
+
+- **identity classification**: classified into employees, providers, patners and we can assign specific roles to each identity types.
 
 
-
-IAG main stakeholders:
-
-
-iam team: iam functional & technical
-
-security and compliance team: ciso,governance team, business continuity team
-
-business team: hr, procurement, app owners,assistants,mamager
-
-architects: iam, security, enterprise architects
+- **authoritative sources**: hr systems and this associates with IG solution.
 
 
-identity management capabilities:
+- **identity life cycle**:  created -> change role --> deactivated --> deleted
 
+- **unique identifier**: for each identity this is necessary for compliance reasons.
 
-identity model: every identity is represented by attribute and it is mainly a digital copy of physical identity.
+- **identity certification**: IAG need to perform identity certification & revocation especially for dormant identities that are not  being used.
 
-identity classification: classified into employees, providers, patners and we can assign specific roles to each identity types.
+- **Identity Certification** = Reviewing and confirming that a user’s access is still valid and necessary.
 
+## Identity Model:
 
-authoritative sources: hr systems and this associates with IG solution.
+- **Identity**: Who you are in the organization (your digital representation) and can be associated to none,one or more accounts.
 
+- **Account**: A resource tied to credentials and permissions that lets you log in to systems/services.
 
-identity life cycle:  created -> change role --> deactivated --> deleted
+- **Access Rights**: permissions you have (what you can do).
 
-unique identifier: for each identity this is necessary for compliance reasons.
+- **Attributes**: Details about your identity—like name, email, department, job title, location, employee ID, etc.
 
-identity certification: IAG need to perform identity certification & revocation especially for dormant identities that are not  being used.
-
-Identity Certification = Reviewing and confirming that a user’s access is still valid and necessary.
-
-Identity Model:
-
-Identity: Who you are in the organization (your digital representation) and can be associated to none,one or more accounts.
-
-Account: A resource tied to credentials and permissions that lets you log in to systems/services.
-
-Access Rights: permissions you have (what you can do).
-
-Attributes: Details about your identity—like name, email, department, job title, location, employee ID, etc.
-
-ex:
+### example:
  
-employee : john 
+- employee : john 
 
-accounts:
+- accounts:
 
-windows account: login,pwsd
+ - windows account: login,pwsd
 
-GitHub account: login,pwsd
+ - GitHub account: login,pwsd
 
-access rights: IT role, business role
+- access rights: IT role, business role
 
-attributes
-first name,last name, mail,job title, status,dept..
+- attributes
+ - first name,last name, mail,job title, status,dept..
 
 
+- identity iq  (on-prem solution of vendor - sailpoint )
 
-identity iq  (on-prem solution of vendor - sailpoint
+## Lab SailPoint IIQ: Discovery of the identity Model:
 
+- SailPoint already installed, preconfigured
 
 
-Lab SailPoint IIQ: Discovery of the identity Model:
+- post login we can see 
 
-SailPoint already installed, preconfigured
+ - **identities tab**:  where we can manage the identities, create, delete & modifying..
 
+ - **applications tab**:   where we can manage the rights catalogue that will be assigned to users & essentially managing authorizations
 
-post login we can see 
 
-identities tab:  where we can manage the identities, create, delete & modifying..
+- **Intelligence tab**: where we can see the audit & reporting menu.
 
-applications tab:   where we can manage the rights catalogue that will be assigned to users & essentially managing authorizations
+- **Setup**: we can see this if user is admin
 
 
-Intelligence tab: where we can see the audit & reporting menu.
 
-Setup: we can see this if user is admin
+- lets have a quick look on identity and its representation by navigating to 
 
+- **identities --> identity warehouse**- we can see lot of identities and also at top bottom we can see overall count of identities
 
 
-lets have a quick look on identity and its representation by navigating to 
+-  under **entitlements** tab we can see roles and entitlements
 
-identities --> identity warehouse- we can see lot of identities and also at top bottom we can see overall count of identities
+- Entitlements = individual permissions
+- Roles = bundles of entitlements for a job function
 
 
- under entitlements tab we can see roles and entitlements
+- Roles at the top that provides rights which are displayed at bottom
 
-Entitlements = individual permissions
-Roles = bundles of entitlements for a job function
+- Under **application accounts**  we can see which accounts are associated with the identity
 
+- we can drag the drop down of any application account and we can see whether the account status, locked yes or no..
 
-Roles at the top that provides rights which are displayed at bottom
 
-Under application accounts  we can see which accounts are associated with the identity
+- by default we will be seeing hr employees under application accounts of any identity as it is a source of identity data that will be synchronized with the IG solution.
 
-we can drag the drop down of any application account and we can see whether the account status, locked yes or no..
 
+- Under **User Rights menu** we can see the  what platform-level rights that they have for IdentityIQ.
 
-by default we will be seeing hr employees under application accounts of any identity as it is a source of identity data that will be synchronized with the IG solution.
 
 
-Under User Rights menu we can see the  what platform-level rights that they have for IdentityIQ.
 
+## Identity classification:
 
 
+- common classification:
 
-Identity classification:
+ - employee
+ - interns
+ - temp worker
+ - contractor
+ - supplier
+ - patner
+ - bot : non human
 
+- other classification:
+ - permanent employee
+ - fixed-term employee
+ - subsidiary employee
+ - subsidiary contractor
+ - vendor
 
-common classification:
 
-employee
-interns
-temp worker
-contractor
-supplier
-patner
-bot - non human
+## Lab SailPoint IIQ: Identity Classification
 
-other classification:
-permanent employee
-fixed-term employee
+- post logging into IIQ Interface navigate to identities tab --> identity warehouse --> on the right side we can see what type of identity it is.. like employee, contractor.. Its actually a configuration made in solution. Each identity comes from an authoritative source.
 
-subsidiary employee
-subsidiary contractor
+- The attributes differ from each identity based on the identity type. ex: job title only present for employees not for contractors.
 
-vendor
 
+- How this info is retrieved from authoritative sources??
 
-Lab SailPoint IIQ: Identity Classification
 
-post logging into IIQ Interface navigate to identities tab --> identity warehouse --> on the right side we can see what type of identity it is.. like employee, contractor.. Its actually a configuration made in solution. Each identity comes from an authoritative source.
 
-The attributes differ from each identity based on the identity type. ex: job title only present for employees not for contractors.
+## Authoritative sources - 1:
 
 
-How this info is retrieved from authoritative sources??
+- we have some famous human resources information systems (HRIS)  like
 
+ - workday
+ - oracle
+ - sap
+ - talentspace
 
+- all the above mentioned are used to manage identities
 
-Authoritative sources - 1:
 
+- once the identity is created in the authoritative sources the goal is to import it into IAG solutions.
 
-we have some famous human resources information systems (HRIS)  like
+- similarly when data is modified in human resources information systems(HRIS) they need to sync..
 
-workday
-oracle
-sap
-talentspace
 
-all the above mentioned are used to manage identities
+- This integration can be done in 2 ways
 
 
-once the identity is created in the authoritative sources the goal is to import it into IAG solutions.
+ - 1.**Flat file (.csv)**
 
-similarly when data is modified in human resources information systems(HRIS) they need to sync..
 
+- HRIS generates the flat file and this IAG solution ingests the file for creation, modification, delete..
 
-This integration can be done in 2 ways
+- 2.**Direct connector**
 
+- these are becoming more and more common. these are real connectors i.e., technical connectors b/w HRIS and IAG solutions
 
-1.Flat file (.csv)
 
+## Authoritative sources - 2:
 
-HRIS generates the flat file and this IAG solution ingests the file for creation, modification, delete..
+- Data changes in identity authoritative sources can trigger IAM processes like joiner, mover, leaver processes
+```
+In identity authoritative source          In IAG                 Main actions performed
 
-2.Direct connector
+New Identity                              joiner process           create digital identity, generate login/pwsd,assign access rights, send notification to user and manager
 
-these are becoming more and more common. these are real connectors i.e., technical connectors b/w HRIS and IAG solutions
 
+Identity removal		                      	Leaver process	          Deactivate digital identity, remove access in applications
 
-Authoritative sources - 2:
+Job update				                           Mover process	           Delete old access rights, assign new access rights
+```
 
-Data changes in identity authoritative sources can trigger IAM processes like joiner, mover, leaver processes
-In identity authoritative source       In IAG                 Main actions performed
 
-New Identity                           joiner process         create digital identity, generate login/pwsd,               assign access rights, send notification to user and manager
 
+## Lab SailPoint IIQ: Authoritative sources - 1:
 
-Identity removal			Leaver process	      Deactivate digital identity, remove access in applications
+-  Take 2 .csvs  in text format 1 for employees and another for contractors
 
-Job update				Mover process	     Delete old access rights, assign new access rights
+- at the end of each file add // which will ignore that particular identity.
 
 
+- Go to setup menu and click on Tasks
 
 
-Lab SailPoint IIQ: Authoritative sources - 1:
+- click on **aggregate employees** and right click and click on **execute in background** & do the same for aggregate contractors.
 
- Take 2 .csvs  in text format 1 for employees and another for contractors
+- **Note**: Aggregate = fetch and load data from connected sources into SailPoint.
 
-and at the end of each file add // which will ignore that particular identity.
 
+- After doing that go to **Task results** and we can see whether tasks for both employees and contractors are succeeded or not.
 
-Go to setup menu and click on Tasks
 
+- Again remove the // from last line and we can  do the same aggregate employees & contractors. This time we can clearly see the difference that under **identities created** we can see the number as 1 for both employees and contractors as we exactly modified 1 for both.
 
-click on aggregate employees and right click and click on execute in background & do the same for aggregate contractors.
 
-Note: Aggregate = fetch and load data from connected sources into SailPoint.
-
-
-After doing that go to Task results and we can see whether tasks for both employees and contractors are succeeded or not.
-
-
-Again remove the // from last line and we can  do the same aggregate employees & contractors. This time we can clearly see the difference that under identities created we can see the number as 1 for both employees and contractors as we exactly modified 1 for both.
-
-
-Note:  we wont be able to see the managers of all above users as it needs policy evaluation and identity linking which happens during refresh identity cube.
+- **Note**:  we wont be able to see the managers of all above users as it needs policy evaluation and identity linking which happens during **refresh identity cube**.
 Refresh Identity Cube = Rebuild identity, apply rules, link relationships (like manager), calculate roles, policies, and risk scores.
 
 
-navigate to setup --> tasks --> search for refresh identity cube.
+- navigate to setup --> tasks --> search for refresh identity cube.
 
 
-employee departure process
+## employee departure process
 
-we need to keep // infront of .csv for employee then save and click on aggregate employees and run in background and we can see the task result where we can observe that account links deleted as 1.
+- we need to keep // infront of .csv for employee then save and click on aggregate employees and run in background and we can see the task result where we can observe that **account links deleted** as 1.
 
-Through above process we have seen how identities have integrated into IAG solutions to manage iam life cycle.
-The files we modifies comes from HRIS in this case.
+- Through above process we have seen how identities have integrated into IAG solutions to manage iam life cycle.
+- The files we modifies comes from HRIS in this case.
 
-Note: Need to configure this file path in server.
+- **Note**: Need to configure this file path in server if its self hosting
 
-Lab SailPoint IIQ: Authoritative sources - 2:
-
-
-In this lab we r going to focus on modifying identity information.
+## Lab SailPoint IIQ: Authoritative sources - 2:
 
 
-Modify the location of user from x to y and save and click on setup and tasks and click on aggregate employees and we can observe the location is changed to latest one.
+- In this lab we r going to focus on modifying identity information.
 
 
-Note: In sailpoint we cant modify the data if we wants to change we need to do it from authoritative source i.e from HRIS. Its a good practice to respect this principle. But in few cases we need to modify data due to bugs, delays from HRIS we need to manually do this for temporary purpose. keep in mind that again if we do employee aggregate the changes which we manually modified and changes which are coming from authoritative source are matched then only old data will stay or else authoritative source data will be considered.
-
- ex:  from authoritative source  we received data where the identity data is paris but identity actual region is London we can manually change to London through below steps.
-
-settings --> global settings --> identity mappings --> region --> edit mode --> modify from read to temporary.
+- Modify the location of user from x to y and save and click on setup and tasks and click on aggregate employees and we can observe the location is changed to latest one.
 
 
+- **Note**: In sailpoint we cant modify the data if we wants to change we need to do it from authoritative source i.e from HRIS. Its a good practice to respect this principle. But in few cases we need to modify data due to bugs, delays from HRIS we need to manually do this for temporary purpose. keep in mind that again if we do employee aggregate the changes which we manually modified and changes which are coming from authoritative source are matched then only old data will stay or else authoritative source data will be considered.
+
+-  **example**:  from authoritative source  we received data where the identity data is paris but identity actual region is London we can manually change to London through below steps.
+
+- settings --> global settings --> identity mappings --> region --> edit mode --> modify from read to temporary.
 
 
-Identity Life cycle:
+## Identity Life cycle:
 
 
 
