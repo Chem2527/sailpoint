@@ -4,11 +4,12 @@
 - Pillars of iam
 
 ```
-identity management             access rights management                    authentication management            privileged access management
+identity management            access rights management                  authentication management   privileged access management
 |                              |                                          |                            |
 |                              |                                          |                            |
 |					                         |	                                         |                            |
-|	Iam for users(sailpont)	     |Iam for applications( sailpoint)          |      ping identity,okta    |              cyberark
+|                              |                                          |                            |              
+Iam for users(sailpont)       Iam for applications.. sailpoint            ping identity,okta           cyberark
 ```
 
 
