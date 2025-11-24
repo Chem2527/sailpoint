@@ -330,7 +330,28 @@ Refresh Identity Cube = Rebuild identity, apply rules, link relationships (like 
 
 ## Identity Certification:
 
+- **Identity Certification** : Checking if users have the right access right now.
+
+- **Identity Recertification** : Doing that check again at regular intervals (e.g., every 3 months, 6 months, or yearly).
+
+- <img width="800" height="404" alt="image" src="https://github.com/user-attachments/assets/ed65fa13-9c87-4e7c-97b5-dde0dc907d9d" />
+
+- workflow: compliance manager --> manager --> IAG
+
+
+## Access rights Management Capabilities:
+
+- <img width="3264" height="2448" alt="image" src="https://github.com/user-attachments/assets/a817625b-e8fc-4569-8d17-85f85f4708ae" />
+
+- How to assign the access rights to identities and how this access rights are managed to meet the challenges faced by bussinesses and comply with security requirements.
+
+- Access management includes 8 major capabilities to support access management processes.
+
 - 
+
+- 
+- 
+
  
 
 
