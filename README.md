@@ -366,7 +366,7 @@ Refresh Identity Cube = Rebuild identity, apply rules, link relationships (like 
 - **Drawbacks**: maintenance of larger roles if org is big.
 
 
-## ABAC : Attribute based Access Control(fine-grained control):
+##  Access rights Models - ABAC : Attribute based Access Control(fine-grained control):
 
 - This model controls access by evaluating rules against attributes:
  - user attributes
@@ -376,7 +376,46 @@ Refresh Identity Cube = Rebuild identity, apply rules, link relationships (like 
 - Retrieval of attributes is achieved at the time of authentication.
 - <img width="3264" height="1821" alt="image" src="https://github.com/user-attachments/assets/2d12bbfa-7554-4455-9464-c39f508a74c7" />
 - <img width="3264" height="1630" alt="image" src="https://github.com/user-attachments/assets/826b7e9d-f1dd-4264-85d6-e6a79677bf6c" />
+
+
+##  Access rights Models:  RBAC-A
+
+- Integrating **attributes** with **RBAC** model was made possible and allowed the creation of an even more advanced model which is **RBAC-A**
+
+- Role assignment is made dynamically by evaluating rules within the IAG solution against attributes.
+
+- **Example Rule**: If Department = Finance AND Location = Hyderabad → Assign Finance Analyst Role automatically.
+
+So RBAC-A = RBAC + Attribute-based logic for dynamic role assignment.
+-  <img width="3264" height="1482" alt="image" src="https://github.com/user-attachments/assets/2a602d0c-bb48-4079-bd5a-a6c683dcde22" />
+
+### RBAC (Traditional)
+
+- User → Assigned Role → Gets Permissions.
+Example:
+
+- Role = Finance Analyst
+- Permissions = SAP Read, SAP Write.
+
+- **Problem**: If user changes department, you must manually change the role.
+
+- **RBAC-A (Dynamic)**
+
+- User → Attributes → Rules → Role → Permissions.
+**Example:**
+
+- **Attributes**:
+
+- Department = Finance
+- Location = Hyderabad
+
+- **Rule**:
+
+- IF Department = Finance AND Location = Hyderabad → Assign Finance Analyst Role.
+
+## Role Management 1:
 - 
+
 
 
 
