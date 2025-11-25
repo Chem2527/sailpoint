@@ -414,7 +414,43 @@ Example:
 - IF Department = Finance AND Location = Hyderabad → Assign Finance Analyst Role.
 
 ## Role Management 1:
-- 
+
+- <img width="3264" height="1801" alt="image" src="https://github.com/user-attachments/assets/044eab0a-889e-4d79-abbd-25eba9964c61" />
+
+- **Name & Description**: Uniquely identify and understand its scope.
+- **Role Composition**: Access rights granted by the role
+- **Owner**: Responsible of the role model
+- **Role criticality**: Level of criticality of the rights granted
+- **Population authorized**: Identities that can benefit from the role
+- **Approval workflow**: Approvals needed to obtain role
+- **SoD (Segregation of duties) toxicity**: Incompatibilities with other roles.(detects toxic combinations of entitlements)
+
+ ## Role management 2:
+ - **Focus on role composition**: This will be done via 2 approaches
+ 
+ ### **Top-Down**
+ - Develop a group of roles based on job functionalities and needs while keeping in mind the principles of SOD and least privilege.
+
+ ### Bottom-Up
+ - Analyze user access data to identify clusters of users with similar permissions and organize them into appropriate roles.
+
+### Role life cycle:
+
+- Role creation --> Role update --> Role decomissioning
+
+- <img width="3264" height="1761" alt="image" src="https://github.com/user-attachments/assets/c35f1a98-0c6c-4efa-a5f6-8cf6e42ccb40" />
+
+- <img width="3264" height="1761" alt="image" src="https://github.com/user-attachments/assets/4ccdd8b5-94f6-4efb-a1cb-63381f8d4122" />
+
+
+## Access request and workflow:
+
+
+
+
+
+-    
+
 
 
 
