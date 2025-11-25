@@ -445,6 +445,17 @@ Example:
 
 ## Access request and workflow:
 
+- <img width="3264" height="1853" alt="image" src="https://github.com/user-attachments/assets/33e14489-8d0b-43a2-a97e-9644f609e01b" />
+
+- <img width="3264" height="1784" alt="image" src="https://github.com/user-attachments/assets/5c6cc445-5785-44fa-b8bc-4f3c82681653" />
+
+
+
+## LAB SailPoint IIQ: Application configuration and request:
+
+-
+
+
 
 
 
