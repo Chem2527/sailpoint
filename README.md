@@ -467,7 +467,29 @@ Example:
     
 - <img width="3264" height="959" alt="image" src="https://github.com/user-attachments/assets/0dbcdeff-1a08-4ee8-8394-58505e19507f" />
 
-- If we want to add any  entitlement to individual for particular application we need to navigate to **applications** tab and click on **Entitlement catalog** and click on **add new entitlement** and then choose **application** and select **attribute** that corresponds to **entitlement** and fill the **value** (Ex: we need  to add reporting  permission to individual then we need to fill **Reporting** under value )
+- If we want to add any  entitlement to individual for particular application we need to navigate to **applications** tab and click on **Entitlement catalog** and click on **add new entitlement** and then choose **application** and select **attribute** that corresponds to **entitlement** and fill the **value** (Ex: we need  to add reporting  permission to individual then we need to fill **Reporting** under value ) and add description(configure reports) under **Requestable** tab and save it.
+
+- In reality above entitlement wont be created yet it needs validation workflows for approval. But if we use admin account for above activity we can approve request for ourself by navigating to **Home page** and click on **approvals**  and approve it. Post that just verify the same by navigating to Entitlement catalog and type the application name we can the entitlement which we created and approved now.
+
+
+- In above we just created entitlement and now we will assign this to identity by navigating to **left menu** --> **Manage Access** --> **Manage User Access** and search  users and select and click next.
+
+- In 2nd step search  access and use filters option for selecting entitlement in our case its reporting and click on Next and then review and submit. Even after submitting the request entitlement wont be assigned to user immediately. we can cross verify the same by navigating to **identity --> Identity warehouse** --> **user name --> Application Accounts** and under this we can clearly see reporting entitlement is not yet assigned. But under events we can see the request as is it is pending under approval by user manager which we can see under the home page --> track my requests.
+
+- Login to manager account and approve the same and post that manager can manage the identites by navigating to Managing Identity --> View identity 
+
+## LAB SailPoint IIQ: Automatic Role Configuration:
+
+- 
+
+- 
+
+- 
+
+-  
+
+
+- 
 
 
 - 
