@@ -1,4 +1,4 @@
-# Sail Point
+<img width="3264" height="1784" alt="image" src="https://github.com/user-attachments/assets/e94eb397-4328-47c5-8af9-2704774ee0d0" /># Sail Point
 - Gatner: provides rankings for iam solutions
 
 - Pillars of iam
@@ -453,7 +453,24 @@ Example:
 
 ## LAB SailPoint IIQ: Application configuration and request:
 
--
+- In this lab we r going to modify the configuration of an application to add additional entitlement to this application. In this lab we already pre-configured a  number of applications
+
+- We can see the list of applications under **Applications Tab** --> **Application Definition**.
+
+- So the idea is to revoke/grant rights for users on this applications.
+
+- Click on any application under this and click on **configuration** tab and click on **schema** 
+
+-  We can see the list of applications under **Applications Tab** --> **Entitlement catalog**.
+
+-  In the below sheet we can see list of entitlements available for time tracking application.
+    
+- <img width="3264" height="959" alt="image" src="https://github.com/user-attachments/assets/0dbcdeff-1a08-4ee8-8394-58505e19507f" />
+
+- If we want to add any  entitlement to individual for particular application we need to navigate to **applications** tab and click on **Entitlement catalog** and click on **add new entitlement** and then choose **application** and select **attribute** that corresponds to **entitlement** and fill the **value** (Ex: we need  to add reporting  permission to individual then we need to fill **Reporting** under value )
+
+
+- 
 
 
 
