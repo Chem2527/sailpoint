@@ -523,12 +523,15 @@ Example:
 
 - Roles are created by analyzing existing user access patterns.
 
+## Lab SailPointIIQ :  Role Mining
 
 
+## Segregation od Duties: This helps to ensure that no individual has too much control over single process. Segregation of Duties (SoD) exists—to prevent one person from having conflicting powers that enable fraud.
 
-
+- <img width="3264" height="1833" alt="image" src="https://github.com/user-attachments/assets/6d7b69f6-bc64-4f34-b89c-f0fa274bf8d9" />
 
 - 
+
 
 -  
 
