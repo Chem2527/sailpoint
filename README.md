@@ -480,9 +480,53 @@ Example:
 
 ## LAB SailPoint IIQ: Automatic Role Configuration:
 
-- 
+- Click on **setup** --> **Roles** --> Click On **Add**
 
-- 
+- I want to give time tracking reporting rights to the department **executive management**  under Assignment rule  which can be done by below
+
+- Create role and assign necessary entitlements
+
+- <img width="3264" height="1717" alt="image" src="https://github.com/user-attachments/assets/113b1f93-4c1d-467e-8081-d4a82336de58" />
+
+## Role Mining
+- Role Mining refers to the process of analyzing access rights and permission data from existing system or application.
+
+- This process is used to identify groups of users who share similar permissions and group them into roles or user groups.
+
+- The goal here is to create roles that simplify the onboarding process for new users.
+
+- **Scenario**: Finance Department
+
+- You analyze access data for 50 users in the Finance team.
+- You find that 30 users have these common entitlements:
+
+ -  View_Invoice
+ - Approve_Payment
+ - Access_Finance_Reports
+
+
+
+- **Role Mining Outcome**
+
+- Instead of assigning these 3 entitlements individually to each user, you create a role called:
+
+- Finance Analyst Role
+
+- Includes: View_Invoice, Approve_Payment, Access_Finance_Reports. Assign this role to those 30 users.
+
+
+ ### Top-Down Approach
+
+- Roles are designed based on business functions and job responsibilities.
+
+### Bottom-Up Approach
+
+- Roles are created by analyzing existing user access patterns.
+
+
+
+
+
 
 - 
 
